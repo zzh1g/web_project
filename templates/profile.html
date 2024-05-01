@@ -1,0 +1,9 @@
+{% extends 'index.html' %}
+{% block content %}
+<p><label>Имя пользователя: {{name}}</label>
+<p><label>Школа: {{school}}</label>
+<p><label>Email: {{email}}</label>
+<hr>
+{% for post in posts %}
+{% endfor %}
+{% endblock %}

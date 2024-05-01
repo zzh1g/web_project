@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+{% for cat, msg in get_flashed_messages(True) %}
+<div class="flash {{cat}}">{{msg}}</div>
+{% endfor %}
+
+<form action="" method="post" class="form-contact">
+  <p><label>Имя: </label><input type="text" name="name" value="" requied/></p>
+  <p><label>Возраст: </label><input type="text" name="old" value="" requied/></p>
+  <p><label>Школа: </label><input type="text" name="scool" value="" requied/></p>
+  <p><label>Почта: </label><input type="text" name="mail" value="" requied/></p>
+  <p><label>Пароль: </label><input type="text" name="psw" value="" requied/></p>
+  <p><input type="submit" value="Регистрация"></p>
+</form>
+{% endblock %}
